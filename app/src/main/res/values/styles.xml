@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Theme.Beyob" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="colorControlActivated">@color/colorControlActivated</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+    </style>
+
+    <!--Toolbar Superior-->
+    <style name="Widget.Beyob.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">?attr/colorAccent</item>
+        <item name="android:theme">@style/Theme.Beyob</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Beyob.Toolbar</item>
+    </style>
+
+    <style name="TextAppearance.Beyob.Toolbar" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Widget.Beyob.Backdrop" parent="">
+        <item name="android:background">?attr/colorAccent</item>
+    </style>
+
+    <!--Estilos de componentes-->
+    <style name="Widget.Beyob.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlineBox">
+        <item name="hintTextAppearance">@style/TextAppearance.Beyob.TextInputLayout.HintText</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColorHint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Beyob.TextInputLayout.HintText" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="Widget.Beyob.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">?android:attr/colorPrimaryDark</item>
+        <item name="backgroundTint">?attr/colorControlActivated</item>
+        <item name="android:stateListAnimator" tools:ignore="NewApi">
+            @animator/byb_btn_entrar
+        </item>
+    </style>
+
+    <style name="Widget.Beyob.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Shrine.Title" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+</resources>

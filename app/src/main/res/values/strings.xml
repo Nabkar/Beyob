@@ -1,0 +1,22 @@
+<resources>
+    <string name="byb_app_name">Beyob</string>
+    <string name="byb_hint_username">Username</string>
+    <string name="byb_hint_password">Password</string>
+    <string name="byb_button_next">Let\'s go!</string>
+    <string name="byb_button_cancel">Cancel</string>
+    <string name="byb_error_password">Password must contain at least 8 characters.</string>
+    <string name="byb_filter_title">Filter</string>
+    <string name="byb_search_title">Search</string>
+    <string name="byb_tipo_title">TituloCard</string>
+    <string name="byb_tipo_descripcion">Secondary text</string>
+
+    <!-- Etiquetas del backdrop -->
+    <!--<string name="byb_featured_label">Featured</string>
+    <string name="byb_apartment_label">Apartment</string>
+    <string name="byb_accessories_label">Accessories</string>
+    <string name="byb_shoes_label">Shoes</string>
+    <string name="byb_tops_label">Tops</string>
+    <string name="byb_bottoms_label">Bottoms</string>
+    <string name="byb_dresses_label">Dresses</string>-->
+    <string name="byb_account_label">My Account</string>
+</resources>
