@@ -33,13 +33,13 @@
                 android:textAlignment="center"
                 android:textAppearance="?attr/textAppearanceSubtitle2"  />
 
-            <TextView
-                android:id="@+id/tipo_price"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/byb_tipo_descripcion"
-                android:textAlignment="center"
-                android:textAppearance="?attr/textAppearanceBody2" />
+            <!--<TextView-->
+                <!--android:id="@+id/tipo_price"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/byb_tipo_descripcion"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textAppearance="?attr/textAppearanceBody2" />-->
         </LinearLayout>
     </LinearLayout>
 </android.support.design.card.MaterialCardView>

@@ -43,16 +43,16 @@
         android:layout_height="wrap_content"
         android:text="@string/shr_dresses_label" />-->
 
-    <View
-        android:layout_width="56dp"
-        android:layout_height="1dp"
-        android:layout_margin="16dp"
-        android:background="?android:attr/textColorPrimary" />
-
     <android.support.design.button.MaterialButton
         style="@style/Widget.Beyob.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/byb_account_label" />
+    
+    <View
+        android:layout_width="56dp"
+        android:layout_height="1dp"
+        android:layout_margin="16dp"
+        android:background="?android:attr/textColorPrimary" />
 
 </merge>

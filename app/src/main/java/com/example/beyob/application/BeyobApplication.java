@@ -17,7 +17,7 @@ public class BeyobApplication extends Application {
 	}
 
 	public void setAppContext(Context mAppContext) {
-		this.appContext = mAppContext;
+		appContext = mAppContext;
 	}
 
 	@Override
