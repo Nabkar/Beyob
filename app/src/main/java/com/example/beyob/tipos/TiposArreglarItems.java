@@ -18,7 +18,7 @@ public class TiposArreglarItems extends RecyclerView.ItemDecoration {
 							   RecyclerView parent, RecyclerView.State state) {
 		outRect.left = smallPadding;
 		outRect.right = smallPadding;
-        /*outRect.top = largePadding;
-        outRect.bottom = largePadding;*/
+        outRect.top = largePadding;
+        outRect.bottom = largePadding;
 	}
 }

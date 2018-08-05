@@ -12,10 +12,10 @@
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:paddingTop="50dp"
+        android:paddingTop="56dp"
         android:paddingBottom="100dp">
 
-        <!--<include layout="@layout/shr_backdrop" />-->
+        <!--<include layout="@layout/byb_backdrop" />-->
     </LinearLayout>
 
     <android.support.design.widget.AppBarLayout
@@ -47,8 +47,9 @@
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view"
+            android:paddingTop="20dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"/>
 
     </android.support.v4.widget.NestedScrollView>
 </FrameLayout>

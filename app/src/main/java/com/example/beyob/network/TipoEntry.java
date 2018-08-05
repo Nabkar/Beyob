@@ -25,16 +25,14 @@ public class TipoEntry {
 	public final String title;
 	public final Uri dynamicUrl;
 	public final String url;
-	//public final String price;
-	public final String description;
+	public final String subtitle;
 
 	public TipoEntry(
-			String title, String dynamicUrl, String url/*, String price*/, String description) {
+			String title, String dynamicUrl, String url, String subtitle) {
 		this.title = title;
 		this.dynamicUrl = Uri.parse(dynamicUrl);
 		this.url = url;
-		//this.price = price;
-		this.description = description;
+		this.subtitle = subtitle;
 	}
 
 	/**

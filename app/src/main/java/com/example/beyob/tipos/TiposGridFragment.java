@@ -33,13 +33,13 @@ public class TiposGridFragment extends Fragment {
 		// Inflate the layout for this fragment
 		View view = inflater.inflate(R.layout.byb_tipos_grid_fragment, container, false);
 
-		//Set up the toolbar
+		// Set up the toolbar
 		setUpToolbar(view);
 
 		// Set up de RecyclerView
 		RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
 		recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2, GridLayoutManager.VERTICAL, false));
+        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 1, GridLayoutManager.VERTICAL, false));
         TipoCardRecyclerViewAdapter adapter = new TipoCardRecyclerViewAdapter(
                 TipoEntry.initTipoEntryList(getResources()));
         recyclerView.setAdapter(adapter);
@@ -54,12 +54,12 @@ public class TiposGridFragment extends Fragment {
 			}
 		});
 		recyclerView.setLayoutManager(gridLayoutManager);
-		StaggeredProductCardRecyclerViewAdapter adapter = new StaggeredProductCardRecyclerViewAdapter(
-				ProductEntry.initProductEntryList(getResources()));
+		TiposEscalonadosCardRecyclerViewAdapter adapter = new TiposEscalonadosCardRecyclerViewAdapter(
+				TipoEntry.initTipoEntryList(getResources()));
 		recyclerView.setAdapter(adapter);
-		int largePadding = getResources().getDimensionPixelSize(R.dimen.byb_staggered_product_grid_spacing_large);
-		int smallPadding = getResources().getDimensionPixelSize(R.dimen.byb_staggered_product_grid_spacing_small);
-		recyclerView.addItemDecoration(new TiposGridItemDecoration(largePadding, smallPadding));*/
+		int largePadding = getResources().getDimensionPixelSize(R.dimen.byb_staggered_tipo_grid_spacing_large);
+		int smallPadding = getResources().getDimensionPixelSize(R.dimen.byb_staggered_tipo_grid_spacing_small);
+		recyclerView.addItemDecoration(new TipoGridItemDecoration(largePadding, smallPadding));*/
 
 		// Set cut corner background for API 23+
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {

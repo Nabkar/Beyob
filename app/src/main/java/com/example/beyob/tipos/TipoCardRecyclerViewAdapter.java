@@ -34,7 +34,7 @@ public class TipoCardRecyclerViewAdapter extends RecyclerView.Adapter<TipoCardVi
 		if (tiposList != null && position < tiposList.size()) {
 			TipoEntry tipo = tiposList.get(position);
 			holder.tipoTitle.setText(tipo.title);
-			//holder.tipoPrice.setText(tipo.price);
+			holder.tipoSubtitle.setText(tipo.subtitle);
 			imageRequester.setImageFromUrl(holder.tipoImage, tipo.url);
 		}
 	}

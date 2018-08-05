@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity implements NavigationHost {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.byb_main_activity);
 
+		// Cargamos en el FragmentManager la primera vista
 		if (savedInstanceState == null) {
 			getSupportFragmentManager()
 					.beginTransaction()

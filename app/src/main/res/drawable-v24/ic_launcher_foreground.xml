@@ -8,7 +8,7 @@
         android:fillColor="#442C2E"
         android:fillType="evenOdd"
         android:pathData="M47.54,56.79L52.92,56.79L52.92,64.97L47.54,56.79ZM42.92,49.77L52.92,49.77L52.92,54.63L46.12,54.63L42.92,49.77ZM55.08,49.77L65.08,49.77L55.08,64.97L55.08,49.77ZM60.93,44.53L64.3,47.61L60.93,47.61L60.93,44.53ZM48.57,43.16L58.77,43.16L58.77,47.61L43.7,47.61L48.57,43.16ZM47.73,41L39.51,48.51L54,70.55L68.5,48.52L60.27,41L47.73,41Z"
-        android:strokeWidth="1"
+        android:strokeWidth="5"
         android:strokeColor="#00000000" />
     <path
         android:fillAlpha="0.2"

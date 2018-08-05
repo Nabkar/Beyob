@@ -13,12 +13,12 @@ public class TipoCardViewHolder extends RecyclerView.ViewHolder {
 	//TODO: Find and store views from itemView
 	public NetworkImageView tipoImage;
 	public TextView tipoTitle;
-	public TextView tipoPrice;
+	public TextView tipoSubtitle;
 
 	public TipoCardViewHolder(@NonNull View itemView) {
 		super(itemView);
 		tipoImage = itemView.findViewById(R.id.tipo_image);
 		tipoTitle = itemView.findViewById(R.id.tipo_title);
-		tipoPrice = itemView.findViewById(R.id.tipo_price);
+		tipoSubtitle = itemView.findViewById(R.id.tipo_subtitle);
 	}
 }
