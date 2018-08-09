@@ -26,13 +26,15 @@ public class TipoEntry {
 	public final Uri dynamicUrl;
 	public final String url;
 	public final String subtitle;
+	public final String image;
 
 	public TipoEntry(
-			String title, String dynamicUrl, String url, String subtitle) {
+			String title, String dynamicUrl, String url, String subtitle, String image) {
 		this.title = title;
 		this.dynamicUrl = Uri.parse(dynamicUrl);
 		this.url = url;
 		this.subtitle = subtitle;
+		this.image = image;
 	}
 
 	/**

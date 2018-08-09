@@ -70,6 +70,10 @@ public class ImageRequester {
 		networkImageView.setImageUrl(url, imageLoader);
 	}
 
+	public void setImageFromResources(NetworkImageView networkImageView, int id) {
+		networkImageView.setImageResource(id);
+	}
+
 	private int calculateMaxByteSize() {
 		DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
 		final int screenBytes = displayMetrics.widthPixels * displayMetrics.heightPixels * 4;

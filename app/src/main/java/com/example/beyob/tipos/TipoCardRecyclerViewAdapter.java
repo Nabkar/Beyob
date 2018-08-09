@@ -1,5 +1,6 @@
 package com.example.beyob.tipos;
 
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -16,10 +17,12 @@ public class TipoCardRecyclerViewAdapter extends RecyclerView.Adapter<TipoCardVi
 
 	private List<TipoEntry> tiposList;
 	private ImageRequester imageRequester;
+	private Context context;
 
-	TipoCardRecyclerViewAdapter(List<TipoEntry> productList) {
-		this.tiposList = productList;
+	TipoCardRecyclerViewAdapter(Context context, List<TipoEntry> tiposList) {
+		this.tiposList = tiposList;
 		imageRequester = ImageRequester.getInstance();
+		this.context = context;
 	}
 
 	@NonNull
@@ -35,7 +38,12 @@ public class TipoCardRecyclerViewAdapter extends RecyclerView.Adapter<TipoCardVi
 			TipoEntry tipo = tiposList.get(position);
 			holder.tipoTitle.setText(tipo.title);
 			holder.tipoSubtitle.setText(tipo.subtitle);
-			imageRequester.setImageFromUrl(holder.tipoImage, tipo.url);
+			if(tipo.image.isEmpty())
+				imageRequester.setImageFromUrl(holder.tipoImage, tipo.url);
+			else {
+				int id = context.getResources().getIdentifier(tipo.image, "drawable", context.getPackageName());
+				imageRequester.setImageFromResources(holder.tipoImage, id);
+			}
 		}
 	}
 

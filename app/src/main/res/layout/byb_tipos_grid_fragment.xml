@@ -15,7 +15,7 @@
         android:paddingTop="56dp"
         android:paddingBottom="100dp">
 
-        <!--<include layout="@layout/byb_backdrop" />-->
+        <include layout="@layout/byb_backdrop" />
     </LinearLayout>
 
     <android.support.design.widget.AppBarLayout

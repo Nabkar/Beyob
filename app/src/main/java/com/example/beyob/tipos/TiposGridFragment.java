@@ -40,26 +40,12 @@ public class TiposGridFragment extends Fragment {
 		RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
 		recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 1, GridLayoutManager.VERTICAL, false));
-        TipoCardRecyclerViewAdapter adapter = new TipoCardRecyclerViewAdapter(
+        TipoCardRecyclerViewAdapter adapter = new TipoCardRecyclerViewAdapter(getContext(),
                 TipoEntry.initTipoEntryList(getResources()));
         recyclerView.setAdapter(adapter);
         int largePadding = getResources().getDimensionPixelSize(R.dimen.byb_tipo_grid_spacing);
         int smallPadding = getResources().getDimensionPixelSize(R.dimen.byb_tipo_grid_spacing_small);
         recyclerView.addItemDecoration(new TiposArreglarItems(largePadding, smallPadding));
-		/*GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 2, GridLayoutManager.HORIZONTAL, false);
-		gridLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
-			@Override
-			public int getSpanSize(int position) {
-				return position % 3 == 2 ? 2 : 1;
-			}
-		});
-		recyclerView.setLayoutManager(gridLayoutManager);
-		TiposEscalonadosCardRecyclerViewAdapter adapter = new TiposEscalonadosCardRecyclerViewAdapter(
-				TipoEntry.initTipoEntryList(getResources()));
-		recyclerView.setAdapter(adapter);
-		int largePadding = getResources().getDimensionPixelSize(R.dimen.byb_staggered_tipo_grid_spacing_large);
-		int smallPadding = getResources().getDimensionPixelSize(R.dimen.byb_staggered_tipo_grid_spacing_small);
-		recyclerView.addItemDecoration(new TipoGridItemDecoration(largePadding, smallPadding));*/
 
 		// Set cut corner background for API 23+
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
