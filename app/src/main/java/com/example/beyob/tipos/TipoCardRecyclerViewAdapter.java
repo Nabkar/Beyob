@@ -7,8 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.bumptech.glide.Glide;
 import com.example.beyob.R;
-import com.example.beyob.network.ImageRequester;
+//import com.example.beyob.network.ImageRequester;
+import com.example.beyob.network.GlideApp;
 import com.example.beyob.network.TipoEntry;
 
 import java.util.List;
@@ -16,12 +18,12 @@ import java.util.List;
 public class TipoCardRecyclerViewAdapter extends RecyclerView.Adapter<TipoCardViewHolder> {
 
 	private List<TipoEntry> tiposList;
-	private ImageRequester imageRequester;
+	//private ImageRequester imageRequester;
 	private Context context;
 
 	TipoCardRecyclerViewAdapter(Context context, List<TipoEntry> tiposList) {
 		this.tiposList = tiposList;
-		imageRequester = ImageRequester.getInstance();
+		//imageRequester = ImageRequester.getInstance();
 		this.context = context;
 	}
 
@@ -38,12 +40,18 @@ public class TipoCardRecyclerViewAdapter extends RecyclerView.Adapter<TipoCardVi
 			TipoEntry tipo = tiposList.get(position);
 			holder.tipoTitle.setText(tipo.title);
 			holder.tipoSubtitle.setText(tipo.subtitle);
-			if(tipo.image.isEmpty())
-				imageRequester.setImageFromUrl(holder.tipoImage, tipo.url);
-			else {
-				int id = context.getResources().getIdentifier(tipo.image, "drawable", context.getPackageName());
-				imageRequester.setImageFromResources(holder.tipoImage, id);
-			}
+
+			GlideApp.with(context)
+				.load(context.getResources().getIdentifier(tipo.image,"drawable", context.getPackageName()))
+					.error(R.drawable.imagenotfound)
+					.centerCrop()
+				.into(holder.tipoImage);
+//			if(tipo.image.isEmpty())
+//				imageRequester.setImageFromUrl(holder.tipoImage, tipo.url);
+//			else {
+//				int id = context.getResources().getIdentifier(tipo.image, "drawable", context.getPackageName());
+//				imageRequester.setImageFromResources(holder.tipoImage, id);
+//			}
 		}
 	}
 

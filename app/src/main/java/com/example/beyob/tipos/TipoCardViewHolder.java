@@ -3,15 +3,17 @@ package com.example.beyob.tipos;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.android.volley.toolbox.NetworkImageView;
+//import com.android.volley.toolbox.NetworkImageView;
 import com.example.beyob.R;
 
 public class TipoCardViewHolder extends RecyclerView.ViewHolder {
 
 	//TODO: Find and store views from itemView
-	public NetworkImageView tipoImage;
+	//public NetworkImageView tipoImage;
+	public ImageView tipoImage;
 	public TextView tipoTitle;
 	public TextView tipoSubtitle;
 

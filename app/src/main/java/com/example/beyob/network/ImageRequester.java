@@ -1,14 +1,14 @@
 package com.example.beyob.network;
 
 import android.content.Context;
-import android.graphics.Bitmap;
+//import android.graphics.Bitmap;
 import android.util.DisplayMetrics;
-import android.util.LruCache;
+//import android.util.LruCache;
 
-import com.android.volley.RequestQueue;
-import com.android.volley.toolbox.ImageLoader;
-import com.android.volley.toolbox.NetworkImageView;
-import com.android.volley.toolbox.Volley;
+//import com.android.volley.RequestQueue;
+//import com.android.volley.toolbox.ImageLoader;
+//import com.android.volley.toolbox.NetworkImageView;
+//import com.android.volley.toolbox.Volley;
 import com.example.beyob.application.BeyobApplication;
 
 /**
@@ -17,16 +17,16 @@ import com.example.beyob.application.BeyobApplication;
 public class ImageRequester {
 	private static ImageRequester instance = null;
 	private final Context context;
-	private final RequestQueue requestQueue;
-	private final ImageLoader imageLoader;
+	//private final RequestQueue requestQueue;
+	//private final ImageLoader imageLoader;
 	private final int maxByteSize;
 
 	private ImageRequester() {
 		context = BeyobApplication.getAppContext();
-		this.requestQueue = Volley.newRequestQueue(context);
-		this.requestQueue.start();
+		//this.requestQueue = Volley.newRequestQueue(context);
+		//this.requestQueue.start();
 		this.maxByteSize = calculateMaxByteSize();
-		this.imageLoader =
+		/*this.imageLoader =
 				new ImageLoader(
 						requestQueue,
 						new ImageLoader.ImageCache() {
@@ -47,7 +47,7 @@ public class ImageRequester {
 							public synchronized void putBitmap(String url, Bitmap bitmap) {
 								lruCache.put(url, bitmap);
 							}
-						});
+						});*/
 	}
 
 	/**
@@ -61,18 +61,18 @@ public class ImageRequester {
 	}
 
 	/**
-	 * Sets the image on the given {@link NetworkImageView} to the image at the given URL
+	 * Sets the image on the given {@link //NetworkImageView} to the image at the given URL
 	 *
-	 * @param networkImageView {@link NetworkImageView} to set image on
-	 * @param url              URL of the image
+	 * @param //networkImageView {@link //NetworkImageView} to set image on
+	 * @param //url              URL of the image
 	 */
-	public void setImageFromUrl(NetworkImageView networkImageView, String url) {
+	/*public void setImageFromUrl(NetworkImageView networkImageView, String url) {
 		networkImageView.setImageUrl(url, imageLoader);
 	}
 
 	public void setImageFromResources(NetworkImageView networkImageView, int id) {
 		networkImageView.setImageResource(id);
-	}
+	}*/
 
 	private int calculateMaxByteSize() {
 		DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
