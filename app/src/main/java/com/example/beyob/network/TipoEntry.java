@@ -40,8 +40,18 @@ public class TipoEntry {
 	/**
 	 * Cargamos el JSON de tipos
 	 */
-	public static List<TipoEntry> initTipoEntryList(Resources resources) {
-		InputStream inputStream = resources.openRawResource(R.raw.tipos);
+	public static List<TipoEntry> initTipoEntryList(Resources resources, String tipoDatos, String tipoCoctel) {
+		InputStream inputStream = null;
+		switch(tipoDatos) {
+			case "tipos":
+				inputStream = resources.openRawResource(R.raw.tipos);
+				break;
+			case "recetas":
+				if (tipoCoctel.equalsIgnoreCase("after dinners")){
+					inputStream = resources.openRawResource(R.raw.recetas_after_dinners);
+					break;
+				}
+		}
 		Writer writer = new StringWriter();
 		char[] buffer = new char[1024];
 		try {

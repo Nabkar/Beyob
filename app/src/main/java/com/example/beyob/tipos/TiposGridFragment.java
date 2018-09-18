@@ -14,6 +14,7 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
+import android.widget.TextView;
 
 import com.example.beyob.NavigationIconClickListener;
 import com.example.beyob.R;
@@ -29,7 +30,7 @@ public class TiposGridFragment extends Fragment {
 
 	@Override
 	public View onCreateView(
-			@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+			@NonNull LayoutInflater inflater, ViewGroup container, final Bundle savedInstanceState) {
 		// Inflate the layout for this fragment
 		View view = inflater.inflate(R.layout.byb_tipos_grid_fragment, container, false);
 
@@ -41,7 +42,7 @@ public class TiposGridFragment extends Fragment {
 		recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 1, GridLayoutManager.VERTICAL, false));
         TipoCardRecyclerViewAdapter adapter = new TipoCardRecyclerViewAdapter(getContext(),
-                TipoEntry.initTipoEntryList(getResources()));
+                TipoEntry.initTipoEntryList(getResources(), "tipos", ""));
         recyclerView.setAdapter(adapter);
         int largePadding = getResources().getDimensionPixelSize(R.dimen.byb_tipo_grid_spacing);
         int smallPadding = getResources().getDimensionPixelSize(R.dimen.byb_tipo_grid_spacing_small);

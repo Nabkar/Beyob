@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tipos.TiposGridFragment">
+    tools:context=".recetas.RecetasGridFragment">
 
     <LinearLayout
         style="@style/Widget.Beyob.Backdrop"
@@ -37,11 +37,11 @@
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.NestedScrollView
-        android:id="@+id/tipos_grid"
+        android:id="@+id/recetas_grid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="56dp"
-        android:background="@color/tiposGridBackgroundColor"
+        android:background="@color/recetasGridBackgroundColor"
         android:elevation="8dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 

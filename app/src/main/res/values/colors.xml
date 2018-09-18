@@ -7,5 +7,6 @@
     <color name="toolbarIconColor">#FFCF44</color>
     <color name="loginPageBackgroundColor">#414149</color>
     <color name="tiposGridBackgroundColor">#414149</color>
+    <color name="recetasGridBackgroundColor">#414149</color>
     <color name="colorControlActivated">#FFCF44</color>
 </resources>

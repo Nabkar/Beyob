@@ -1,21 +1,22 @@
 package com.example.beyob.tipos;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.bumptech.glide.Glide;
+import com.example.beyob.MainActivity;
 import com.example.beyob.R;
-//import com.example.beyob.network.ImageRequester;
 import com.example.beyob.network.GlideApp;
 import com.example.beyob.network.TipoEntry;
+import com.example.beyob.recetas.RecetasGridFragment;
 
 import java.util.List;
 
-public class TipoCardRecyclerViewAdapter extends RecyclerView.Adapter<TipoCardViewHolder> {
+public class TipoCardRecyclerViewAdapter extends RecyclerView.Adapter<TipoCardViewHolder>  {
 
 	private List<TipoEntry> tiposList;
 	//private ImageRequester imageRequester;
@@ -37,7 +38,7 @@ public class TipoCardRecyclerViewAdapter extends RecyclerView.Adapter<TipoCardVi
 	@Override
 	public void onBindViewHolder(@NonNull TipoCardViewHolder holder, int position) {
 		if (tiposList != null && position < tiposList.size()) {
-			TipoEntry tipo = tiposList.get(position);
+			final TipoEntry tipo = tiposList.get(position);
 			holder.tipoTitle.setText(tipo.title);
 			holder.tipoSubtitle.setText(tipo.subtitle);
 
@@ -52,6 +53,23 @@ public class TipoCardRecyclerViewAdapter extends RecyclerView.Adapter<TipoCardVi
 //				int id = context.getResources().getIdentifier(tipo.image, "drawable", context.getPackageName());
 //				imageRequester.setImageFromResources(holder.tipoImage, id);
 //			}
+			holder.tipoImage.setOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View view) {
+					if(context instanceof MainActivity){
+						System.out.println("Click!!!!!!");
+						// Le pasamos al nuevo fragment los datos necesarios
+						Bundle datos = new Bundle();
+						datos.putString("tipo",tipo.title);
+						RecetasGridFragment fragment = new RecetasGridFragment();
+						fragment.setArguments(datos);
+
+						// Lanzamos el fragment nuevo desde la actividad principal
+						((MainActivity)context).navigateTo(fragment,true);
+					}
+				}
+			});
+
 		}
 	}
 
