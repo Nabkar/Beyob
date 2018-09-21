@@ -1,49 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".receta.RecetaViewFragment">-->
+
+    <!--<LinearLayout-->
+        <!--style="@style/Widget.Beyob.Backdrop"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:orientation="vertical"-->
+        <!--android:paddingTop="56dp"-->
+        <!--android:paddingBottom="100dp">-->
+
+        <!--<include layout="@layout/byb_backdrop" />-->
+    <!--</LinearLayout>-->
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:elevation="0dp">-->
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/app_bar"-->
+            <!--style="@style/Widget.Beyob.Toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingStart="12dp"-->
+            <!--android:paddingLeft="12dp"-->
+            <!--android:paddingEnd="12dp"-->
+            <!--android:paddingRight="12dp"-->
+            <!--app:contentInsetStart="0dp"-->
+            <!--app:title="@string/byb_app_name"-->
+            <!--app:navigationIcon="@drawable/ic_launcher_foreground_byb"/>-->
+        <!--&lt;!&ndash;<android.support.design.widget.TabLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/tabs"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:tabMode="fixed"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:tabGravity="fill"/>&ndash;&gt;-->
+    <!--</android.support.design.widget.AppBarLayout>-->
+    <android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".receta.RecetaViewFragment">
-
-    <LinearLayout
-        style="@style/Widget.Beyob.Backdrop"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:paddingTop="56dp"
-        android:paddingBottom="100dp">
-
-        <include layout="@layout/byb_backdrop" />
-    </LinearLayout>
-
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:elevation="0dp">
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/app_bar"
-            style="@style/Widget.Beyob.Toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="12dp"
-            android:paddingLeft="12dp"
-            android:paddingEnd="12dp"
-            android:paddingRight="12dp"
-            app:contentInsetStart="0dp"
-            app:title="@string/byb_app_name"
-            app:navigationIcon="@drawable/ic_launcher_foreground_byb"/>
-        <!--<android.support.design.widget.TabLayout-->
-            <!--android:id="@+id/tabs"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--app:tabMode="fixed"-->
-            <!--app:tabGravity="fill"/>-->
-    </android.support.design.widget.AppBarLayout>
-    <android.support.design.widget.CoordinatorLayout
-        android:layout_height="match_parent"
-        android:layout_width="match_parent">
 
         <FrameLayout
             android:id="@+id/frame_container"
@@ -140,4 +144,4 @@
         <!--</LinearLayout>-->
     <!--</android.support.v4.widget.NestedScrollView>-->
 
-</FrameLayout>
+<!--</FrameLayout>-->

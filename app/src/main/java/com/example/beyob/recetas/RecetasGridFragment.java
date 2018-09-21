@@ -1,5 +1,6 @@
 package com.example.beyob.recetas;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -15,9 +16,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
 
+import com.example.beyob.MainActivity;
 import com.example.beyob.NavigationIconClickListener;
 import com.example.beyob.R;
 import com.example.beyob.network.TipoEntry;
+import com.example.beyob.receta.RecetaViewActivity;
 import com.example.beyob.tipos.TiposArreglarItems;
 
 public class RecetasGridFragment extends Fragment {
@@ -43,7 +46,7 @@ public class RecetasGridFragment extends Fragment {
         RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 1, GridLayoutManager.VERTICAL, false));
-        RecetasCardRecyclerViewAdapter adapter = new RecetasCardRecyclerViewAdapter(getContext(),
+        RecetasCardRecyclerViewAdapter adapter = new RecetasCardRecyclerViewAdapter(getActivity(),
                 TipoEntry.initTipoEntryList(getResources(),"recetas", this.titulo));
         recyclerView.setAdapter(adapter);
         int largePadding = getResources().getDimensionPixelSize(R.dimen.byb_tipo_grid_spacing);

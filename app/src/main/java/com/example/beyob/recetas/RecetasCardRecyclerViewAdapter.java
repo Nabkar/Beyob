@@ -1,6 +1,7 @@
 package com.example.beyob.recetas;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -12,6 +13,7 @@ import com.example.beyob.MainActivity;
 import com.example.beyob.R;
 import com.example.beyob.network.GlideApp;
 import com.example.beyob.network.TipoEntry;
+import com.example.beyob.receta.RecetaViewActivity;
 import com.example.beyob.receta.RecetaViewFragment;
 
 import java.util.List;
@@ -46,22 +48,11 @@ public class RecetasCardRecyclerViewAdapter extends RecyclerView.Adapter<Recetas
                     .centerCrop()
                     .into(holder.image);
 
-            holder.image.setOnClickListener(new View.OnClickListener() {
+            holder.card.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    recetaListener(receta);
-                }
-            });
-            holder.title.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    recetaListener(receta);
-                }
-            });
-            holder.dificultad.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    recetaListener(receta);
+                    //recetaListener(receta);
+                    context.startActivity(new Intent(context, RecetaViewActivity.class));
                 }
             });
 
@@ -73,17 +64,17 @@ public class RecetasCardRecyclerViewAdapter extends RecyclerView.Adapter<Recetas
         return recetasList.size();
     }
 
-    private void recetaListener(TipoEntry receta){
-        if(context instanceof MainActivity){
-            //System.out.println("Click!!!!!!");
-            // Le pasamos al nuevo fragment los datos necesarios
-            Bundle datos = new Bundle();
-            datos.putString("tipo", receta.title);
-            RecetaViewFragment fragment = new RecetaViewFragment();
-            fragment.setArguments(datos);
-
-            // Lanzamos el fragment nuevo desde la actividad principal
-            ((MainActivity)context).navigateTo(fragment,true);
-        }
-    }
+//    private void recetaListener(TipoEntry receta){
+//        if(context instanceof MainActivity){
+//            //System.out.println("Click!!!!!!");
+//            // Le pasamos al nuevo fragment los datos necesarios
+//            Bundle datos = new Bundle();
+//            datos.putString("tipo", receta.title);
+//            RecetaViewFragment fragment = new RecetaViewFragment();
+//            fragment.setArguments(datos);
+//
+//            // Lanzamos el fragment nuevo desde la actividad principal
+//            ((MainActivity)context).navigateTo(fragment,true);
+//        }
+//    }
 }

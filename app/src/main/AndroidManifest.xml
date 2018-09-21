@@ -23,6 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".receta.RecetaViewActivity"/>
     </application>
     <meta-data android:name="com.example.beyob.application.BeyobApplication.GlideConfiguration"
         android:value="GlideModule"/>
