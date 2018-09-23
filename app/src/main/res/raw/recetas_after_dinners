@@ -6,16 +6,27 @@
 		"image": "black_russian"
 	},
 	{
-		"title": "Grasshopper",
-		"url": "",
+		"title": "Chocolate Martini",
+		"url": "http://lostragos.com/receta/chocolate-martini",
 		"subtitle": "5",
-		"image": "grasshopper"
+		"image": "chocolate_martini"
 	},
 	{
-		"title": "Banana Mango",
-		"url": "http://lostragos.com/receta/banana-mango",
+		"title": "Café Irlandés",
+		"url": "http://lostragos.com/receta/cafe-irlandes-irish-coffee",
 		"subtitle": "5",
-		"image": ""
+		"image": "cafe_irlandes"
+	},
+	{
+		"title": "Stinger",
+		"url": "https://www.vix.com/es/imj/gourmet/3356/cocteles-con-brandy-como-hacer-un-stinger",
+		"subtitle": "5",
+		"image": "stinger"
+	},
+	{
+		"title": "B&B",
+		"url": "http://thecocktaildrink.com/brandy-benedictine-cocktail/",
+		"subtitle": "5",
+		"image": "byb"
 	}
-
 ]

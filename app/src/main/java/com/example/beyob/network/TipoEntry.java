@@ -51,28 +51,109 @@ public class TipoEntry {
 					inputStream = resources.openRawResource(R.raw.recetas_after_dinners);
 					break;
 				}
+				if (tipoCoctel.equalsIgnoreCase("cobblers")){
+					inputStream = resources.openRawResource(R.raw.recetas_cobblers);
+					break;
+				}
+				if (tipoCoctel.equalsIgnoreCase("coladas")){
+					inputStream = resources.openRawResource(R.raw.recetas_coladas);
+					break;
+				}
+				if (tipoCoctel.equalsIgnoreCase("collins")){
+					inputStream = resources.openRawResource(R.raw.recetas_collins);
+					break;
+				}
+				if (tipoCoctel.equalsIgnoreCase("coolers")){
+					inputStream = resources.openRawResource(R.raw.recetas_cooler);
+					break;
+				}
+				/*if (tipoCoctel.equalsIgnoreCase("crustas")){
+					inputStream = resources.openRawResource(R.raw.recetas_crustas);
+					break;
+				}*/
+				if (tipoCoctel.equalsIgnoreCase("cups")){
+					inputStream = resources.openRawResource(R.raw.recetas_cups);
+					break;
+				}
+				if (tipoCoctel.equalsIgnoreCase("daisies")){
+					inputStream = resources.openRawResource(R.raw.recetas_daisy);
+					break;
+				}
+				if (tipoCoctel.equalsIgnoreCase("eggnogs")){
+					inputStream = resources.openRawResource(R.raw.recetas_eggnogs);
+					break;
+				}
+				/*if (tipoCoctel.equalsIgnoreCase("fixies")){
+					inputStream = resources.openRawResource(R.raw.recetas_fixies);
+					break;
+				}*/
+
+				if (tipoCoctel.equalsIgnoreCase("fizzes")){
+					inputStream = resources.openRawResource(R.raw.recetas_fizz);
+					break;
+				}
+				if (tipoCoctel.equalsIgnoreCase("flips")){
+					inputStream = resources.openRawResource(R.raw.recetas_flip);
+					break;
+				}
+				/*if (tipoCoctel.equalsIgnoreCase("frappes")){
+					inputStream = resources.openRawResource(R.raw.recetas_frappes);
+					break;
+				}*/
+				if (tipoCoctel.equalsIgnoreCase("grogs")){
+					inputStream = resources.openRawResource(R.raw.recetas_grog);
+					break;
+				}
+				if (tipoCoctel.equalsIgnoreCase("highballs")){
+					inputStream = resources.openRawResource(R.raw.recetas_highball);
+					break;
+				}
+				/*if (tipoCoctel.equalsIgnoreCase("old fashioned")){
+					inputStream = resources.openRawResource(R.raw.recetas_old_fashioned);
+					break;
+				}*/
+				/*if (tipoCoctel.equalsIgnoreCase("ponche")){
+					inputStream = resources.openRawResource(R.raw.recetas_ponche);
+					break;
+				}*/
+				/*if (tipoCoctel.equalsIgnoreCase("pousse-café")){
+					inputStream = resources.openRawResource(R.raw.recetas_pousse);
+					break;
+				}*/
+				/*if (tipoCoctel.equalsIgnoreCase("puff")){
+					inputStream = resources.openRawResource(R.raw.recetas_puff);
+					break;
+				}*/
+			default:
 		}
-		Writer writer = new StringWriter();
-		char[] buffer = new char[1024];
-		try {
-			Reader reader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
-			int pointer;
-			while ((pointer = reader.read(buffer)) != -1) {
-				writer.write(buffer, 0, pointer);
-			}
-		} catch (IOException exception) {
-			Log.e(TAG, "Error writing/reading from the JSON file.", exception);
-		} finally {
+		if (inputStream != null) {
+			Writer writer = new StringWriter();
+			char[] buffer = new char[1024];
 			try {
-				inputStream.close();
+				Reader reader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
+				int pointer;
+				while ((pointer = reader.read(buffer)) != -1) {
+					writer.write(buffer, 0, pointer);
+				}
 			} catch (IOException exception) {
-				Log.e(TAG, "Error closing the input stream.", exception);
+				Log.e(TAG, "Error writing/reading from the JSON file.", exception);
+			} finally {
+				try {
+					inputStream.close();
+				} catch (IOException exception) {
+					Log.e(TAG, "Error closing the input stream.", exception);
+				}
 			}
+			String jsonString = writer.toString();
+			Gson gson = new Gson();
+			Type ListType = new TypeToken<ArrayList<TipoEntry>>() {
+			}.getType();
+			return gson.fromJson(jsonString, ListType);
+		} else {
+			Gson gson = new Gson();
+			Type ListType = new TypeToken<ArrayList<TipoEntry>>() {
+			}.getType();
+			return gson.fromJson("", ListType);
 		}
-		String jsonString = writer.toString();
-		Gson gson = new Gson();
-		Type ListType = new TypeToken<ArrayList<TipoEntry>>() {
-		}.getType();
-		return gson.fromJson(jsonString, ListType);
 	}
 }

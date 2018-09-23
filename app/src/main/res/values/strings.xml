@@ -16,6 +16,7 @@
 
     <!--Listado de recetas -->
     <string name="byb_recetas_dificultad">Dificultad</string>
+    <string name="byb_lista_vacia">Todavía no hay recetas en este tipo</string>
 
     <!-- Etiquetas del backdrop -->
     <!--<string name="byb_featured_label">Featured</string>
@@ -28,6 +29,7 @@
     <string name="byb_account_label">My Account</string>
 
     <!-- Receta -->
-    <string name="byb_ingredientes">Ingredientes</string>
-    <string name="byb_explicacion">Explicación</string>
+    <string name="byb_ingredientes">¿Qué le pongo?</string>
+    <string name="byb_utiles">¿Qué necesito?</string>
+    <string name="byb_explicacion">¿Cómo lo hago?</string>
 </resources>

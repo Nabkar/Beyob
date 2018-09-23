@@ -5,7 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.beyob.receta.IngredientesFragment">
+    tools:context="com.example.beyob.receta.UtilesFragment">
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/byb_ingredientes"-->
+    <!--android:textSize="40sp"-->
+    <!--android:textStyle="bold"-->
+    <!--android:layout_centerInParent="true"/>-->
+
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/layoutTextos"
@@ -34,32 +43,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <!--<TextView-->
-        <!--android:id="@+id/dificultad"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_marginBottom="8dp"-->
-        <!--android:layout_marginEnd="8dp"-->
-        <!--android:layout_marginRight="8dp"-->
-        <!--android:text="@string/byb_tipo_descripcion"-->
-        <!--android:textAlignment="center"-->
-        <!--android:textSize="@dimen/byb_receta_view_text_size_xs"-->
-        <!--app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--app:layout_constraintEnd_toEndOf="parent"-->
-        <!--app:layout_constraintStart_toEndOf="@+id/textView" />-->
-
-        <!--<TextView-->
-        <!--android:id="@+id/textView"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_marginBottom="8dp"-->
-        <!--android:layout_marginLeft="8dp"-->
-        <!--android:layout_marginStart="8dp"-->
-        <!--android:text="@string/byb_recetas_dificultad"-->
-        <!--android:textAlignment="center"-->
-        <!--app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--app:layout_constraintStart_toStartOf="parent" />-->
     </android.support.constraint.ConstraintLayout>
 
     <android.support.v4.widget.NestedScrollView
@@ -78,28 +61,28 @@
             android:id="@+id/layoutLineas"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/lblIngredientes"
+                android:id="@+id/lblUtiles"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5sp"
-                android:layout_marginStart="5sp"
-                android:layout_marginRight="5sp"
                 android:layout_marginEnd="5sp"
-                android:text="@string/byb_ingredientes"
-                android:textSize="@dimen/byb_receta_view_text_size_xs"
-                android:textColor="@color/textColorPrimary"/>
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginStart="5sp"
+                android:text="@string/byb_utiles"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/byb_receta_view_text_size_xs" />
 
             <View
                 android:id="@+id/divider"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
-                android:layout_marginLeft="5sp"
-                android:layout_marginStart="5sp"
-                android:layout_marginRight="5sp"
                 android:layout_marginEnd="5sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginStart="5sp"
                 android:background="?android:attr/listDivider"
                 android:visibility="visible" />
         </LinearLayout>

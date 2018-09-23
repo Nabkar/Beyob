@@ -57,7 +57,6 @@ public class TipoCardRecyclerViewAdapter extends RecyclerView.Adapter<TipoCardVi
 				@Override
 				public void onClick(View view) {
 					if(context instanceof MainActivity){
-						System.out.println("Click!!!!!!");
 						// Le pasamos al nuevo fragment los datos necesarios
 						Bundle datos = new Bundle();
 						datos.putString("tipo",tipo.title);

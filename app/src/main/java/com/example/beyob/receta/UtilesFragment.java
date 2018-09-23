@@ -17,11 +17,11 @@ import com.github.chrisbanes.photoview.PhotoView;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class IngredientesFragment extends Fragment {
+public class UtilesFragment extends Fragment {
     private String titulo;
     private String imagen;
     private ArrayList<HashMap<String, String>> receta;
-    public IngredientesFragment() {
+    public UtilesFragment() {
         // Required empty public constructor
     }
 
@@ -30,13 +30,13 @@ public class IngredientesFragment extends Fragment {
         super.onCreate(savedInstanceState);
         this.titulo = getArguments() != null ? getArguments().getString("titulo") : "";
         this.imagen = getArguments() != null ? getArguments().getString("imagen") : "";
-        this.receta = (ArrayList<HashMap<String, String>>) getArguments().getSerializable("receta");
+        this.receta = getArguments() != null ? (ArrayList<HashMap<String, String>>) getArguments().getSerializable("receta") : new ArrayList<HashMap<String, String>>();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.byb_ingredientes_fragment, container, false);
+        View view = inflater.inflate(R.layout.byb_utiles_fragment, container, false);
         LinearLayout contenedor = view.findViewById(R.id.layoutLineas);
 
         TextView titulo = (TextView) view.findViewById(R.id.title);
@@ -64,10 +64,10 @@ public class IngredientesFragment extends Fragment {
 
         int count = 0;
         for(HashMap<String, String> linea : receta) {
-            if (linea.containsKey("ingrediente")) {
+            if (linea.containsKey("utensilio")) {
                 count++;
                 TextView tv = new TextView(getContext());
-                tv.setText(String.valueOf(count) + "- " + linea.get("ingrediente"));
+                tv.setText(String.valueOf(count) + "- " + linea.get("utensilio"));
                 tv.setTextSize(getResources().getDimension(R.dimen.byb_receta_view_text_size_12));
                 ViewGroup.LayoutParams lp = new LinearLayout.LayoutParams(contenedor.getLayoutParams());
                 lp.width = ViewGroup.LayoutParams.MATCH_PARENT;
@@ -79,5 +79,4 @@ public class IngredientesFragment extends Fragment {
         }
         return view;
     }
-
 }

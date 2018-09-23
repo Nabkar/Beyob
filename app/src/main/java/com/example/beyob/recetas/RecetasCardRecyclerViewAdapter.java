@@ -52,10 +52,21 @@ public class RecetasCardRecyclerViewAdapter extends RecyclerView.Adapter<Recetas
                 @Override
                 public void onClick(View view) {
                     //recetaListener(receta);
-                    context.startActivity(new Intent(context, RecetaViewActivity.class));
+                    Intent i = new Intent(context, RecetaViewActivity.class);
+                    i.putExtra("titulo", receta.title);
+                    i.putExtra("imagen", receta.image);
+                    context.startActivity(i);
                 }
             });
+        } else {
+            holder.title.setText(context.getResources().getText(R.string.byb_lista_vacia));
+            holder.dificultad.setText("");
 
+            GlideApp.with(context)
+                    .load(R.drawable.imagenotfound)
+                    .error(R.drawable.imagenotfound)
+                    .centerCrop()
+                    .into(holder.image);
         }
     }
 

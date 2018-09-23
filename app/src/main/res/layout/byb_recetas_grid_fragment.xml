@@ -33,7 +33,7 @@
             android:paddingRight="12dp"
             app:contentInsetStart="0dp"
             app:title="@string/byb_app_name"
-            app:navigationIcon="@drawable/ic_launcher_foreground_byb"/>
+            app:navigationIcon="@mipmap/ic_launcher"/>
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.NestedScrollView

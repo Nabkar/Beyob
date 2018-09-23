@@ -30,18 +30,6 @@
         "image": "cooler"
     },
     {
-        "title": "Crustas",
-        "url": "https://storage.googleapis.com/material-vignettes.appspot.com/image/5-0.jpg",
-        "subtitle": "Servidos en copa de cóctel, este tipo de cóctel se caracteriza porque se decora con un escarchado de azúcar y limón en el borde de la copa, se preparan en coctelera con cubitos de hielo y mezclando el ron, brandy o cognac con azúcar y angostura y decorando el vaso con la corteza del limón cortada en espiral.",
-        "image": "crusta"
-    },
-    {
-        "title": "Cups",
-        "url": "https://storage.googleapis.com/material-vignettes.appspot.com/image/6-0.jpg",
-        "subtitle": "Cóctel cuya base y característica principal son vinos blancos o espumosos,  licor y fruta fresca cortada a trozos, preparado en un recipiente al que se le añade soda, azúcar y hielo, servido en copas de flauta o champagne muy frías. Es recomendable mantener el recipiente con el contenido enfriándose durante 2 horas.",
-        "image": "cup"
-    },
-    {
         "title": "Daisies",
         "url": "https://storage.googleapis.com/material-vignettes.appspot.com/image/7-0.jpg",
         "subtitle": "Contiene una copa de aguardiente o licor y se mezcla en una coctelera con hielo picado, zumo de limón y granadina o jarabe de frambuesa, lo que le da el toque diferencial con el Collins. Se añade muy poca, o nada de azúcar y un poco de soda o sifón. Se sirve en vaso alto o copa de champan y se decora con 2 guindas.",
@@ -54,28 +42,10 @@
         "image": "eggnog"
     },
     {
-        "title": "Fixes",
-        "url": "https://storage.googleapis.com/material-vignettes.appspot.com/image/9-0.jpg",
-        "subtitle": "Su preparación se lleva a cabo en una coctelera añadiendo a un aguardiente, azúcar, hielo y zumo de limón. Es una bebida refrescante que se sirve con hielo frappé en una copa de cóctel y suele ir adornado y acompañado con alguna fruta en lugar del empleo de soda.",
-        "image": "fix"
-    },
-    {
-        "title": "Fizzes",
-        "url": "https://storage.googleapis.com/material-vignettes.appspot.com/image/10-0.jpg",
-        "subtitle": "La base la constituye el soda o el agua tónica, lo que lo diferencia del fix, con un aguardiente y zumo de limón preparado en coctelera con hielo ya que es importante que estén bien fríos y se sirven en vaso largo.",
-        "image": "fizz"
-    },
-    {
         "title": "Flips",
         "url": "https://storage.googleapis.com/material-vignettes.appspot.com/image/11-0.jpg",
         "subtitle": "Se puede utilizar un aguardiente pero principalmente se emplean vinos licorosos como Jerez u Oporto, mezclándolo con una yema de huevo, azúcar, y si se sirve fría, también con hielo. Se mezclan en la coctelera y una vez servido, en copa de cóctel, se espolvorea canela o nuez moscada por encima y está listo.",
         "image": "flip"
-    },
-    {
-        "title": "Frappés",
-        "url": "https://storage.googleapis.com/material-vignettes.appspot.com/image/12-0.jpg",
-        "subtitle": "Se puede realizar con y sin alcohol. Con alcohol se prepara en una copa de tipo flauta con licor y mucho hielo pilé. La base para hacerlo sin alcohol son principalmente frutas.",
-        "image": "frappe"
     },
     {
         "title": "Grogs",
@@ -88,77 +58,5 @@
         "url": "https://storage.googleapis.com/material-vignettes.appspot.com/image/14-0.jpg",
         "subtitle": "Combina un licor o destilado con tónica o bebidas gaseosa (como coca cola). Es un long drink, de origen americano y servido en vaso largo, de tubo normalmente, con cubitos de hielo y limón.",
         "image": "highball"
-    },
-    {
-        "title": "Old fashioned",
-        "url": "https://storage.googleapis.com/material-vignettes.appspot.com/image/15-0.jpg",
-        "subtitle": "Se utiliza un aguardiente normalmente whisky o Bourbon con bítter, soda, un terrón de azúcar y hielo preparada directamente en el vaso de tipo old fashioned, que finalmente se adorna con rodajas de naranja que se aprietan un poco al principio para que suelten su jugo  y una cereza.",
-        "image": "old_fashioned"
-    },
-    {
-        "title": "Ponche",
-        "url": "https://storage.googleapis.com/material-vignettes.appspot.com/image/16-0.jpg",
-        "subtitle": "Se puede emplear en su elaboración distintos licores o vinos de alta graduación, pero principalmente se elabora con ron, acompañado de agua, azúcar y limón. Se puede servir caliente o fría. El ponche caliente es conocido como Eggnog, explicado anteriormente. Si es frío, también es conocido como Punch, y se emplea un licor y un aguardiente, ron principalmente con zumo de frutas y servido en copa de cóctel.",
-        "image": "ponche"
-    },
-    {
-        "title": "Pousse-café",
-        "url": "https://storage.googleapis.com/material-vignettes.appspot.com/image/17-0.jpg",
-        "subtitle": "Bebida muy colorida y vistosa ya que los ingredientes no se mezclan entre sí sino que se superponen formando distintas capas de colores. Se prepara en el vaso y se empieza por los líquidos más pesados cuidadosamente, normalmente estos son los que menos contenido de alcohol llevan.",
-        "image": "pousse_cafe"
-    },
-    {
-        "title": "Puff",
-        "url": "https://storage.googleapis.com/material-vignettes.appspot.com/image/18-0.jpg",
-        "subtitle": "Se componen de un destilado y un vaso de leche fría, lo que lo diferencia de todos los demás. Es servido en vaso largo y ancho y removido con una cucharilla se puede añadir un golpe de soda final.",
-        "image": "puff"
-    },
-    {
-        "title": "Rickeys",
-        "url": "https://storage.googleapis.com/material-vignettes.appspot.com/image/19-0.jpg",
-        "subtitle": "Se comienza colocando una media lima en el fondo del vaso largo y se aplasta para que se extraiga el jugo. Se añaden cubitos de hielo, siguiendo con el aguardiente correspondiente y soda muy fría. La lima exprimida luego se añade al vaso. Se puede añadir azúcar o granadina para que sea más suave y se remueve con una cucharilla.",
-        "image": "rickeys"
-    },
-    {
-        "title": "Sangarees",
-        "url": "https://storage.googleapis.com/material-vignettes.appspot.com/image/20-0.jpg",
-        "subtitle": "Compuesto por un licor, hielo pilé y azúcar glasé, se mezcla y remueve bien directamente en un vaso ancho y se añade nuez moscada.",
-        "image": "sangaree"
-    },
-    {
-        "title": "Slings fríos",
-        "url": "https://storage.googleapis.com/material-vignettes.appspot.com/image/8-0.jpg",
-        "subtitle": "Sling se refiere a que se elabora sin amargos, sin angostura. Se emplea azúcar disuelto en agua fría, una mezcla de licores y un aguardiente, principalmente ginebra, cubitos de hielo, zumo de limón, también puede llevar de piña y granadina para darle color. Al final se le puede añadir agua fría.",
-        "image": "sling_cold"
-    },
-    {
-        "title": "Slings calientes",
-        "url": "https://storage.googleapis.com/material-vignettes.appspot.com/image/8-0.jpg",
-        "subtitle": "Sling se refiere a que se elabora sin amargos, sin angostura. El azúcar se disuelve en agua caliente, se añade un destilado, ginebra generalmente  y zumo de limón a una copa de balón, para finalmente añadir agua caliente y nuez moscada.",
-        "image": "sling_hot"
-    },
-    {
-        "title": "Smashes o Juleps",
-        "url": "https://storage.googleapis.com/material-vignettes.appspot.com/image/8-0.jpg",
-        "subtitle": "Se caracteriza por el empleo de una rama de hierbabuena o menta fresca que se introduce en un vaso largo y se aplasta con azúcar y agua fría, posteriormente se añade hielo pilé y un licor o principalmente un destilado para reducirlo finalmente con soda. También como adorno final se pone una hoja de menta o hierbabuena.",
-        "image": "smash"
-    },
-    {
-        "title": "Sours",
-        "url": "https://storage.googleapis.com/material-vignettes.appspot.com/image/8-0.jpg",
-        "subtitle": "Su ingrediente principal es zumo de limón, del que requieren una buena cantidad. Se mezclan en una coctelera el zumo de limón, azúcar y una copa de un aguardiente con mucho hielo. Es una mezcla sencilla que se sirve después en una copa de cóctel adornada con una guinda y una rodajita de limón.",
-        "image": "sour"
-    },
-    {
-        "title": "Zooms",
-        "url": "https://storage.googleapis.com/material-vignettes.appspot.com/image/8-0.jpg",
-        "subtitle": "Bebida cremosa compuesta por una copa de un destilado, nata liquida y miel, lo que le da el toque distintivo, son agitadas con hielo en una coctelera y servidas posteriormente en una copa de cóctel.",
-        "image": "zoom"
-    },
-    {
-        "title": "Zombies",
-        "url": "https://storage.googleapis.com/material-vignettes.appspot.com/image/8-0.jpg",
-        "subtitle": "Bebida de origen tropical pero común en los EE.UU. elaborado a partir de distintos tipos de ron (blanco, oscuro y dorado) con distintas graduaciones y zumo de distintas frutas. Se prepara en una coctelera, con mucho hielo y se sirve en el vaso. Comúnmente se decora con frutas tropicales. Es una bebida bastante fuerte, además se puede flambear.",
-        "image": "zombie"
     }
 ]

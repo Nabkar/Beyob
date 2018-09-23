@@ -1,6 +1,5 @@
 package com.example.beyob.recetas;
 
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -16,11 +15,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
 
-import com.example.beyob.MainActivity;
 import com.example.beyob.NavigationIconClickListener;
 import com.example.beyob.R;
 import com.example.beyob.network.TipoEntry;
-import com.example.beyob.receta.RecetaViewActivity;
 import com.example.beyob.tipos.TiposArreglarItems;
 
 public class RecetasGridFragment extends Fragment {
@@ -34,8 +31,7 @@ public class RecetasGridFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(
-            @NonNull LayoutInflater inflater, ViewGroup container, final Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, final Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.byb_recetas_grid_fragment, container, false);
 

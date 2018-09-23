@@ -3,18 +3,18 @@
 
     <item
         android:id="@+id/navigation_ingredientes"
-        android:icon="@android:drawable/ic_dialog_email"
+        android:icon="@drawable/ic_format_list_numbers_black_48dp"
         android:title="@string/byb_ingredientes" />
 
     <item
-        android:id="@+id/navigation_explicacion"
-        android:icon="@android:drawable/ic_lock_idle_lock"
-        android:title="@string/byb_explicacion" />
+        android:id="@+id/navigation_utiles"
+        android:icon="@drawable/ic_toolbox_black_48dp"
+        android:title="@string/byb_utiles" />
 
-    <!--<item-->
-        <!--android:id="@+id/navigation_cart"-->
-        <!--android:icon="@drawable/ic_shopping_cart_white_24dp"-->
-        <!--android:title="@string/title_cart" />-->
+    <item
+        android:id="@+id/navigation_explicacion"
+        android:icon="@drawable/ic_pot_mix_black_48dp"
+        android:title="@string/byb_explicacion" />
 
     <!--<item-->
         <!--android:id="@+id/navigation_profile"-->

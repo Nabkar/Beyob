@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:id="@+id/search"
-        android:title="@string/byb_search_title"
-        app:showAsAction="always" />
-    <!--
-        android:icon="@drawable/shr_search"-->
-    <item
-        android:id="@+id/filter"
-        android:title="@string/byb_filter_title"
-        app:showAsAction="always" />
+    <!--<item-->
+        <!--android:id="@+id/search"-->
+        <!--android:title="@string/byb_search_title"-->
+        <!--app:showAsAction="always" />-->
+    <!--&lt;!&ndash;-->
+        <!--android:icon="@drawable/shr_search"&ndash;&gt;-->
+    <!--<item-->
+        <!--android:id="@+id/filter"-->
+        <!--android:title="@string/byb_filter_title"-->
+        <!--app:showAsAction="always" />-->
     <!--
         android:icon="@drawable/shr_filter"-->
 </menu>

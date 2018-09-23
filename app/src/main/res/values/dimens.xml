@@ -21,11 +21,13 @@
     <!--Configuraciones para el listado de recetas -->
     <dimen name="byb_receta_card_image_height">100dp</dimen>
     <dimen name="byb_receta_card_image_width">100dp</dimen>
-    <dimen name="byb_receta_card_text_size">33sp</dimen>
+    <dimen name="byb_receta_card_text_size">25sp</dimen>
 
     <!--Configuraciones para la vista de una receta -->
     <dimen name="byb_receta_view_image_height">100dp</dimen>
     <dimen name="byb_receta_view_image_width">100dp</dimen>
+    <dimen name="byb_receta_view_text_size_xl">40sp</dimen>
     <dimen name="byb_receta_view_text_size_lg">33sp</dimen>
     <dimen name="byb_receta_view_text_size_xs">18sp</dimen>
+    <dimen name="byb_receta_view_text_size_12">12sp</dimen>
 </resources>
