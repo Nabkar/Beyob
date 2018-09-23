@@ -16,13 +16,15 @@
         android:name="com.example.beyob.application.BeyobApplication"
         android:supportsRtl="true"
         android:theme="@style/Theme.Beyob">
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"/>
         <activity android:name=".receta.RecetaViewActivity"/>
     </application>
     <meta-data android:name="com.example.beyob.application.BeyobApplication.GlideConfiguration"
